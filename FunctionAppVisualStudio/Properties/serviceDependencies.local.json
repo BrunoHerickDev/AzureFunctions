@@ -1,0 +1,27 @@
+{
+  "dependencies": {
+    "appInsights1": {
+      "type": "appInsights.sdk"
+    },
+    "storage1": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/storageaccountinnov98e2",
+      "type": "storage.azure",
+      "connectionId": "AzureWebJobsStorage"
+    },
+    "secrets1": {
+      "type": "secrets.user"
+    },
+    "storage2": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/storageaccountinnov98e2",
+      "type": "storage.azure",
+      "connectionId": "AzureQueueTrigger",
+      "secretStore": "LocalSecretsFile"
+    },
+    "storage3": {
+      "resourceId": "/subscriptions/[parameters('subscriptionId')]/resourceGroups/[parameters('resourceGroupName')]/providers/Microsoft.Storage/storageAccounts/storageaccountinnov98e2",
+      "type": "storage.azure",
+      "connectionId": "AzureQueueConnection",
+      "secretStore": "LocalSecretsFile"
+    }
+  }
+}
